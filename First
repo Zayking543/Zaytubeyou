@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Video</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      #container {
+        width: 400px;
+        height: 300px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+{
+  "kind": "youtube#searchResult",
+  "etag": etag,
+  "id": {
+    "kind": string,
+    "videoId": string,
+    "channelId": string,
+    "playlistId": string
+  },
+  "snippet": {
+    "publishedAt": datetime,
+    "channelId": string,
+    "title": string,
+    "description": string,
+    "thumbnails": {
+      (key): {
+        "url": string,
+        "width": unsigned integer,
+        "height": unsigned integer
+      }
+    },
+    "channelTitle": string,
+    "liveBroadcastContent": string
+  }
+}
